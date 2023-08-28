@@ -1,42 +1,124 @@
 .course {
 	padding: 10px 0 32px;
 
+	@media all and (min-width: $sm) {
+		padding: 88px 0 32px;
+	}
+
+	@media all and (min-width: $lg) {
+		padding: 10px 0 32px;
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: center;
-		padding: 48px 50px 32px 70px;
+		flex-direction: column;
+		padding: 0 20px;
+
+		@media all and (min-width: $sm) {
+			padding: 0 30px;
+		}
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			padding: 48px 50px 32px 70px;
+		}
 	}
 
 	&__img {
-		width: calc(50% - 87px);
-		margin-right: 87px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		order: 2;
+
+		@media all and (min-width: $lg) {
+			width: calc(50% - 87px);
+			margin-right: 87px;
+			justify-content: flex-start;
+			order: 1;
+		}
 
 		&_wrapper {
-			width: 457px;
-			height: 420px;
+			width: 178px;
+			height: 163px;
+
+			@media all and (min-width: $sm) {
+				width: 308px;
+				height: 282px;
+			}
+
+			@media all and (min-width: $lg) {
+				width: 457px;
+				height: 420px;
+			}
 		}
 	}
 
 	&__info {
+		order: 1;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $sm) {
+			margin-bottom: 40px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 0;
+		}
 
 		.h4 {
-			max-width: 399px;
+			max-width: 239px;
 			margin-bottom: 12px;
+			font-size: 14px;
+
+			@media all and (min-width: $sm) {
+				font-size: 18px;
+				max-width: 343px;
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 22px;
+				max-width: 399px;
+			}
 		}
 
 		.main_text {
-			margin-bottom: 12px;
+			margin-bottom: 19px;
+			line-height: 150%;
+
+			@media all and (min-width: $sm) {
+				margin-bottom: 14px;
+			}
+
+			@media all and (min-width: $lg) {
+				margin-bottom: 12px;
+			}
+		}
+
+		@media all and (min-width: $lg) {
+			order: 2;
 		}
 	}
 
 	&__title {
 		color: $black;
 		font-family: $ff;
-		font-size: 72px;
+		font-size: 28px;
 		font-style: normal;
 		font-weight: $fw-bold;
-		line-height: 100%;
+		line-height: 120%;
 		text-transform: uppercase;
 		margin-bottom: 12px;
+		max-width: 220px;
+
+		@media all and (min-width: $sm) {
+			font-size: 54px;
+			max-width: 469px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 72px;
+			line-height: 100%;
+		}
 	}
 }
