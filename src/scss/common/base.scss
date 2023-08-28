@@ -18,7 +18,7 @@ body {
 	font-size: $fs-md;
 	line-height: $lh;
 	color: $black;
-	background-color: $white
+	background-color: $bg
 }
 
 img {
@@ -34,8 +34,19 @@ ul {
 }
 
 button {
+	cursor: pointer;
 	border: 0;
-	background-color: transparent;
+	background-color: $accent;
+	transition: background-color ease $tr;
+	border-radius: 75px;
+
+	&:hover {
+		background-color: $blue;
+	}
+
+	&:active {
+		background-color: $focus;
+	}
 }
 
 form, fieldset, input {

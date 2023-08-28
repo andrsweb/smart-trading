@@ -11,10 +11,23 @@ h6, .h6 {
 }
 
 h1, .h1 {
-	font-size: 32px;
+	color: $black;
+	font-family: $ff;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: 150%;
+	text-align: center;
+
+	@media all and (min-width: $sm) {
+		font-size: 54px;
+		margin-bottom: 24px;
+	}
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 72px;
+		text-align: left;
+		margin-bottom: 30px;
 	}
 }
 
