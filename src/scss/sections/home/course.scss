@@ -1,0 +1,42 @@
+.course {
+	padding: 10px 0 32px;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		padding: 48px 50px 32px 70px;
+	}
+
+	&__img {
+		width: calc(50% - 87px);
+		margin-right: 87px;
+
+		&_wrapper {
+			width: 457px;
+			height: 420px;
+		}
+	}
+
+	&__info {
+
+		.h4 {
+			max-width: 399px;
+			margin-bottom: 12px;
+		}
+
+		.main_text {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__title {
+		color: $black;
+		font-family: $ff;
+		font-size: 72px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: 100%;
+		text-transform: uppercase;
+		margin-bottom: 12px;
+	}
+}

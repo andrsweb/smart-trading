@@ -6,7 +6,7 @@
 	}
 
 	@media all and (min-width: $lg) {
-		padding: 70px 0 34px;
+		padding: 70px 0 10px;
 	}
 
 	&__items {
@@ -36,6 +36,10 @@
 		@media all and (min-width: $xl) {
 			width: calc(100% / 4);
 			min-height: 388px;
+
+			&:nth-child(n + 1) {
+				margin-bottom: 0;
+			}
 		}
 
 		&_inner {
@@ -79,22 +83,22 @@
 				}
 			}
 		}
+	}
+}
 
-		&_text {
-			color: $black;
-			font-family: $ff;
-			font-size: 14px;
-			font-style: normal;
-			font-weight: $fw-regular;
-			line-height: 120%;
+.main_text {
+	color: $black;
+	font-family: $ff;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: $fw-regular;
+	line-height: 120%;
 
-			@media all and (min-width: $sm) {
-				line-height: 150%;
-			}
+	@media all and (min-width: $sm) {
+		line-height: 150%;
+	}
 
-			@media all and (min-width: $lg) {
-				font-size: 16px;
-			}
-		}
+	@media all and (min-width: $lg) {
+		font-size: 16px;
 	}
 }
