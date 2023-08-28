@@ -22,6 +22,7 @@ body {
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto
 }
@@ -30,6 +31,17 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none
+}
+
+button {
+	border: 0;
+	background-color: transparent;
+}
+
+form, fieldset, input {
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 
 .wrapper {
