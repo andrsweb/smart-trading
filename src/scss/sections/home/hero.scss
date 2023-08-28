@@ -27,13 +27,19 @@
 
 		@media all and (min-width: $md) {
 			width: 850px;
-			height: 716px;
+			height: 916px;
 			left: 10%;
 		}
 
 		@media all and (min-width: $lg) {
 			left: 29.7%;
 			bottom: 10px;
+		}
+
+		@media all and (min-width: $xxxl) {
+			width: 1700px;
+			left: 23%;
+			height: 980px;
 		}
 	}
 
