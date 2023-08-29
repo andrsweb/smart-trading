@@ -1,0 +1,102 @@
+.basic {
+	padding: 20px 0 25px;
+
+	@media all and (min-width: $sm) {
+		padding: 45px 0 25px;
+	}
+
+	@media all and (min-width: $lg) {
+		padding: 50px 0 50px;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10.5px;
+
+		&_wrapper {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			@media all and (min-width: $sm) {
+				margin-bottom: 70px;
+			}
+
+			@media all and (min-width: $lg) {
+				margin-bottom: 80px;
+			}
+
+			.h2 {
+				margin-bottom: 20px;
+
+				@media all and (min-width: $lg) {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+	&__item {
+		width: calc(100% / 2);
+		padding: 0 10.5px;
+		height: 111px;
+		margin-bottom: 21px;
+
+		@media all and (min-width: $sm) {
+			height: 139px;
+			width: calc(100% / 3);
+		}
+
+		@media all and (min-width: $lg) {
+			width: calc(100% / 5);
+			height: 134px;
+			margin-bottom: 21px;
+		}
+
+		&_inner {
+			padding: 15px;
+
+			@media all and (min-width: $sm) {
+				padding: 20px 15px;
+			}
+	
+			@media all and (min-width: $lh) {
+				padding: 20px;
+			}
+		}
+	}
+
+	&__title {
+		color: $accent;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		line-height: 150%;
+		margin-bottom: 7px;
+
+		@media all and (min-width: $sm) {
+			font-size: 16px;
+		}
+	}
+
+	&__text {
+		color: $black;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 120%;
+
+		@media all and (min-width: $sm) {
+			font-size: 14px;
+		}
+
+		@media all and (min-width: $lg) {
+			line-height: 150%;
+		}
+	}
+}

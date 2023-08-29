@@ -1,0 +1,88 @@
+.testimonials {
+	padding: 25px 0 10px;
+
+	@media all and (min-width: $lg) {
+		padding: 25px 0 50px;
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	.h2 {
+		margin-bottom: 30px;
+	}
+
+	.swiper__buttons {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		right: 50%;
+		bottom: 0;
+		transform: translateX(50%);
+		z-index: 20;
+
+		@media all and (min-width: $xl) {
+			right: 0;
+			bottom: auto;
+			top: 11px;
+			transform: translateX(0);
+		}
+
+		.swiper__prev {
+			margin-right: 15px;
+		}
+
+		.swiper__prev, .swiper__next {
+			cursor: pointer;
+			transition: scale ease $tr;
+
+			&:hover {
+				scale: 1.1
+			}
+		}
+	}
+
+	.swiper-slide {
+		height: 480px;
+		padding: 20px;
+
+		@media all and (min-width: $xl) {
+			height: 425px;
+		}
+
+		&_inner {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&_img {
+			margin-bottom: 11px;
+			width: 59px;
+			height: 59px;
+		}
+
+		&_name {
+			color: $black;
+			font-family: $ff;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $fw-bold;
+			line-height: 150%;
+			margin-bottom: 9px;
+
+			@media all and (min-width: $xl) {
+				font-size: 22px;
+			}
+		}
+
+		&_text {
+			color: $black;
+			font-family: $ff;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: 150%;
+		}
+	}
+}

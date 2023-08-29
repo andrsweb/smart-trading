@@ -1,1 +1,5 @@
 import './common/common'
+import './swiper'
+import './popup'
+import './send-form'
+import './country'

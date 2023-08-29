@@ -1,15 +1,27 @@
+@import '../../node_modules/swiper/swiper-bundle.min';
 // Defaults styles.
 @import 'common/fonts';
 @import 'common/vars';
 @import 'common/typography';
 @import 'common/grid';
 @import 'common/base';
+@import 'common/buttons';
 
 // Header styles.
 @import 'header/header';
 
 // Footer styles.
 @import 'footer/footer';
+@import 'footer/popup';
 
 // Home page sections styles.
 @import 'sections/home/hero';
+@import 'sections/home/about';
+@import 'sections/home/course';
+@import 'sections/home/numbers';
+@import 'sections/home/basic';
+@import 'sections/home/testimonials';
+@import 'sections/home/analysis';
+
+// Thank-you page sections styles.
+@import 'sections/thankyou/hero';
