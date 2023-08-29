@@ -1,5 +1,9 @@
 .testimonials {
-	padding: 25px 0 50px;
+	padding: 25px 0 10px;
+
+	@media all and (min-width: $lg) {
+		padding: 25px 0 50px;
+	}
 
 	&__wrapper {
 		position: relative;

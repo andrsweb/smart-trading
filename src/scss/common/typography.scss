@@ -1,9 +1,7 @@
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h4, .h4 {
 	font-family: $ff;
 	font-weight: $fw-bold;
 	line-height: $lh-title;
@@ -51,7 +49,21 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 30px
+	color: $black;
+	font-family: $ff;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: 120%;
+	text-transform: uppercase;
+
+	@media all and (min-width: $sm) {
+		font-size: 32px;
+	}
+
+	@media all and (min-width: $lg) {
+		font-size: 36px;
+	}
 }
 
 h4, .h4 {
@@ -70,14 +82,6 @@ h4, .h4 {
 	@media all and (min-width: $lg) {
 		font-size: 22px
 	}
-}
-
-h5, .h5 {
-	font-size: $fs-xl
-}
-
-h6, .h6 {
-	font-size: $fs-lg
 }
 
 a {
