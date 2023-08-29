@@ -1,8 +1,8 @@
 .basic {
-	padding: 20px 0 50px;
+	padding: 20px 0 25px;
 
 	@media all and (min-width: $sm) {
-		padding: 45px 0 50px;
+		padding: 45px 0 25px;
 	}
 
 	@media all and (min-width: $lg) {
@@ -16,6 +16,10 @@
 
 		&_wrapper {
 			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 
 			@media all and (min-width: $sm) {
 				margin-bottom: 70px;
