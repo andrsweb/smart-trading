@@ -33,10 +33,20 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 24px;
+	color: $black;
+	font-family: $ff;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: 100%;
+	text-transform: uppercase;
+
+	@media all and (min-width: $sm) {
+		font-size: 32px;
+	}
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 52px;
 	}
 }
 
